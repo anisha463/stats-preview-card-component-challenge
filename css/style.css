@@ -1,0 +1,124 @@
+body{
+   background-color:hsl(233, 47%, 7%) ; 
+   font-size: 1em;
+   margin: 0;
+}
+
+h1, h2{
+    font-family: 'Inter', sans-serif;
+    color:hsl(0, 0%, 100%) ;
+}
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.75;
+    padding-right: 20px;
+}
+
+h4{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 0.75rem;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.container{
+    width: 75%;
+    padding: 9% 12.5% 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Card */
+
+.card{
+    padding: 50px 60px 55px 60px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px 0 0 10px;
+    flex: 1;
+}
+
+.insight{
+    color: hsl(277, 64%, 61%);
+}
+
+/* Stats */
+
+.stats{
+    display: inline-block;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+.stat-value{
+    font-size: 1.5rem;
+    margin: 0 0 5px 0;
+}
+
+/* Header Image */
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0 ;
+    opacity: 0.35;
+}
+
+.image{
+    background:hsl(277, 82%, 22%);
+    border-radius:  0 10px 10px 0;
+    flex: 1.25;
+}
+
+/* Attribution */
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.75);
+    order: 1;
+    margin-top: 10px;
+    margin-bottom: 5%;
+}
+
+a{
+    text-decoration: none;
+    color: hsl(277, 64%, 61%);
+}
+a:hover{
+    color: hsl(277, 50%, 71%);
+}
+
+@media (max-width:1080px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    img{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .image{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card{
+        border-radius: 0 0 10px 10px;
+        text-align: center;
+        padding: 30px;
+    }
+
+    p{
+        padding-right: 0;
+    }
+
+    .stats{
+        display: block;
+        padding-right: 0;
+    }
+}
